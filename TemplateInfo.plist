@@ -44,12 +44,16 @@
 				<dict>
 					<key>Nodes</key>
 					<array>
+						<string>AppBase/___PROJECTNAME___-Bridging-Header.h:comments</string>
+						<string>AppBase/___PROJECTNAME___-Bridging-Header.h</string>
+						<string>Vendors/SwiftyJson/SwiftyJSON.swift</string>
+						<string>Vendors/Reachability/Reachability.m</string>
+						<string>Vendors/Reachability/Reachability.h</string>
 						<string>AppBase/ABController/IBBaseController.swift</string>
 						<string>AppBase/ABView/NoInternetView/NoInternetView.swift</string>
 						<string>AppBase/ABView/NoInternetView/NoInternetView.xib</string>
 						<string>AppConstants/AppConstant.swift</string>
-						<string>AppDelegate/AppDelegate.swift</string>
-						<string>AppDelegate/PushNotificationManager.swift</string>
+						<string>Vendors/PushNotificationManager.swift</string>
 						<string>Extensions/IBSession.swift</string>
 						<string>Extensions/IBString.swift</string>
 						<string>Extensions/IBView.swift</string>
@@ -67,22 +71,56 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>AppDelegate/AppDelegate.swift</key>
+		<key>AppBase/___PROJECTNAME___-Bridging-Header.h:return</key>
+		<string>#ifndef ___PROJECTNAME____Bridging_Header_h</string>
+		<key>AppBase/___PROJECTNAME___-Bridging-Header.h</key>
 		<dict>
 			<key>Path</key>
-			<string>AppDelegate/AppDelegate.swift</string>
+			<string>AppBase/___PROJECTNAME___-Bridging-Header.h</string>
 			<key>Group</key>
 			<array>
-				<string>AppDelegate</string>
+				<string>AppBase</string>
 			</array>
 		</dict>
-		<key>AppDelegate/PushNotificationManager.swift</key>
+		<key>Vendors/Reachability/Reachability.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Vendors</string>
+				<string>Reachability</string>
+			</array>
+			<key>Path</key>
+			<string>Vendors/Reachability/Reachability.h</string>
+		</dict>
+		<key>Vendors/Reachability/Reachability.m</key>
+		<dict>
+			<key>Path</key>
+			<string>Vendors/Reachability/Reachability.m</string>
+			<key>Group</key>
+			<array>
+				<string>Vendors</string>
+				<string>Reachability</string>
+			</array>
+		</dict>
+		<key>Vendors/SwiftyJson/SwiftyJSON.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Vendors/SwiftyJson/SwiftyJSON.swift</string>
+			<key>Group</key>
+			<array>
+				<string>Vendors</string>
+				<string>SwiftyJSON</string>
+			</array>
+		</dict>
+		<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+		<string>AppTheme().customizeAppTheme()</string>
+		<key>Vendors/PushNotificationManager.swift</key>
 		<dict>
 			<key>Path</key>
 			<string>AppDelegate/PushNotificationManager.swift</string>
 			<key>Group</key>
 			<array>
-				<string>AppDelegate</string>
+				<string>Vendors</string>
 			</array>
 		</dict>
 		<key>AppConstants/AppConstant.swift</key>

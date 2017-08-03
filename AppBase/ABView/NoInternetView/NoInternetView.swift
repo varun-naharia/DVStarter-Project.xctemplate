@@ -32,10 +32,10 @@ class NoInternetView: UIView {
     }
     
     @IBAction func retryInternet(_ sender : UIButton) -> Void{
-        ReachabilityUtil.reachability { (status) in
-            if status != NotReachable{
-                self.removeFromSuperview()
-            }
-        }
+//        ReachabilityUtil.reachability { (status) in
+//            if status != NotReachable{
+//                self.removeFromSuperview()
+//            }
+//        }
     }
 }
