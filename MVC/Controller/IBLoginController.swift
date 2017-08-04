@@ -37,32 +37,32 @@ class IBLoginController: IBBaseController {
     
     
     //MARK:- Update UI when reachability change
-    override func reachabilityChanged(notification: Notification) {
-        let currentReachability : Reachability = notification.object as! Reachability
-        let netstatus = currentReachability.currentReachabilityStatus()
-        let nnview = NoInternetView.loadFromXIB()
-        nnview.tag = AppViewTags.NoInternetViewTag
-        switch netstatus {
-            
-        case NotReachable:
-            // Show no internet view
-            nnview.frame = self.view.frame
-            self.view.addSubview(nnview)
-
-            break
-        case ReachableViaWiFi, ReachableViaWWAN:
-            // check no network view is alread added on view
-            if view.subviews.contains(view.viewWithTag(AppViewTags.NoInternetViewTag)!){
-                view.viewWithTag(AppViewTags.NoInternetViewTag)!.removeFromSuperview()
-            }
-            
-            // call your webservice here
-            
-            break
-        default:
-            break
-        }
-    }
+//    override func reachabilityChanged(notification: Notification) {
+//        let currentReachability : Reachability = notification.object as! Reachability
+//        let netstatus = currentReachability.currentReachabilityStatus()
+//        let nnview = NoInternetView.loadFromXIB()
+//        nnview.tag = AppViewTags.NoInternetViewTag
+//        switch netstatus {
+//            
+//        case NotReachable:
+//            // Show no internet view
+//            nnview.frame = self.view.frame
+//            self.view.addSubview(nnview)
+//
+//            break
+//        case ReachableViaWiFi, ReachableViaWWAN:
+//            // check no network view is alread added on view
+//            if view.subviews.contains(view.viewWithTag(AppViewTags.NoInternetViewTag)!){
+//                view.viewWithTag(AppViewTags.NoInternetViewTag)!.removeFromSuperview()
+//            }
+//            
+//            // call your webservice here
+//            
+//            break
+//        default:
+//            break
+//        }
+//    }
     
 }
 

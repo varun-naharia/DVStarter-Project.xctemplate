@@ -18,7 +18,7 @@ class IBBaseController: UIViewController {
         
         
         //Check Network Reachability
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(notification:)), name: NSNotification.Name.reachabilityChanged, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(notification:)), name: NSNotification.Name.reachabilityChanged, object: nil)
 
     }
 
@@ -28,31 +28,31 @@ class IBBaseController: UIViewController {
     }
     
     
-    @objc(reachabilityChange:)
-    func reachabilityChanged(notification : Notification) -> Void {
-        let currentReachability : Reachability = notification.object as! Reachability
-        let netstatus = currentReachability.currentReachabilityStatus()
-        
-        let nnview = NoInternetView.loadFromXIB()
-        
-        switch netstatus {
-            
-        case NotReachable:
-            // Show no internet view
-            nnview.frame = self.view.frame
-            self.view.addSubview(nnview)
-            
-            break
-        case ReachableViaWiFi, ReachableViaWWAN:
-            if view.subviews.contains(nnview) {
-                nnview.removeFromSuperview()
-            }
-
-            break
-        default:
-            break
-        }
-        
-    }
+//    @objc(reachabilityChange:)
+//    func reachabilityChanged(notification : Notification) -> Void {
+//        let currentReachability : Reachability = notification.object as! Reachability
+//        let netstatus = currentReachability.currentReachabilityStatus()
+//        
+//        let nnview = NoInternetView.loadFromXIB()
+//        
+//        switch netstatus {
+//            
+//        case NotReachable:
+//            // Show no internet view
+//            nnview.frame = self.view.frame
+//            self.view.addSubview(nnview)
+//            
+//            break
+//        case ReachableViaWiFi, ReachableViaWWAN:
+//            if view.subviews.contains(nnview) {
+//                nnview.removeFromSuperview()
+//            }
+//
+//            break
+//        default:
+//            break
+//        }
+//        
+//    }
     
 }
