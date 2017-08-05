@@ -32,10 +32,13 @@ class NoInternetView: UIView {
     }
     
     @IBAction func retryInternet(_ sender : UIButton) -> Void{
-//        ReachabilityUtil.reachability { (status) in
-//            if status != NotReachable{
-//                self.removeFromSuperview()
-//            }
-//        }
+        let reachability = Reachability()!
+        switch reachability.currentReachabilityStatus {
+        case .reachableViaWiFi, .reachableViaWWAN:
+            self.removeFromSuperview()
+            break
+        default:
+            break
+        }
     }
 }
