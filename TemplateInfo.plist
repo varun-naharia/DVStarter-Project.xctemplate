@@ -44,6 +44,7 @@
 				<dict>
 					<key>Nodes</key>
 					<array>
+						<string>Vendors/Reachability/Reachability.swift</string>
 						<string>AppBase/___PROJECTNAME___-Bridging-Header.h:comments</string>
 						<string>AppBase/___PROJECTNAME___-Bridging-Header.h</string>
 						<string>Vendors/SwiftyJson/SwiftyJSON.swift</string>
@@ -71,6 +72,16 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>Vendors/Reachability/Reachability.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Vendors</string>
+				<string>Reachability</string>
+			</array>
+			<key>Path</key>
+			<string>Vendors/Reachability/Reachability.swift</string>
+		</dict>
 		<key>AppBase/___PROJECTNAME___-Bridging-Header.h:return</key>
 		<string>#ifndef ___PROJECTNAME____Bridging_Header_h</string>
 		<key>AppBase/___PROJECTNAME___-Bridging-Header.h</key>
