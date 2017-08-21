@@ -8,8 +8,19 @@
 	<string>ds.base.singleViewApplication</string>
 	<key>Ancestors</key>
 	<array>
-		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
-		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.apple.dt.unit.applicationBase</string>
+		<string>com.apple.dt.unit.iosBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:iPhone</string>
+		<string>Info.plist:UIRequiredDeviceCapabilities:base</string>
+		<string>Info.plist:LaunchScreen</string>
+		<string>Assets.xcassets</string>
+		<string>Base.lproj/LaunchScreen.storyboard</string>
+		<string>Info.plist:UIMainStoryboardFile</string>
+		<string>Base.lproj/Main.storyboard</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
@@ -17,9 +28,25 @@
 	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
 	<key>SortOrder</key>
 	<integer>1</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+			</dict>
+		</dict>
+	</array>
 	<key>Options</key>
 	<array>
 		<dict>
+			<key>SortOrder</key>
+			<integer>1</integer>
 			<key>Identifier</key>
 			<string>languageChoice</string>
 			<key>Units</key>
@@ -44,34 +71,451 @@
 				<dict>
 					<key>Nodes</key>
 					<array>
+						<string>AppDelegate/AppDelegate.swift:comments</string>
+						<string>AppDelegate/AppDelegate.swift:imports:importCocoa</string>
+						<string>AppDelegate/AppDelegate.swift:UIApplicationMain</string>
+						<string>AppDelegate/AppDelegate.swift:implementation(AppDelegate: UIResponder, UIApplicationDelegate)</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:properties:window</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions(func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?\) -&gt; Bool)</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillResignActive(func applicationWillResignActive(_ application: UIApplication\))</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillResignActive:comments</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationDidEnterBackground(func applicationDidEnterBackground(_ application: UIApplication\))</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationDidEnterBackground:comments</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillEnterForeground(func applicationWillEnterForeground(_ application: UIApplication\))</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillEnterForeground:comments</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationDidBecomeActive(func applicationDidBecomeActive(_ application: UIApplication\))</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationDidBecomeActive:comments</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillTerminate(func applicationWillTerminate(_ application: UIApplication\))</string>
+						<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillTerminate:comments</string>
 						<string>Vendors/Reachability/Reachability.swift</string>
 						<string>AppBase/___PROJECTNAME___-Bridging-Header.h:comments</string>
 						<string>AppBase/___PROJECTNAME___-Bridging-Header.h</string>
 						<string>Vendors/SwiftyJson/SwiftyJSON.swift</string>
-						<string>Vendors/Reachability/Reachability.m</string>
-						<string>Vendors/Reachability/Reachability.h</string>
-						<string>AppBase/ABController/IBBaseController.swift</string>
-						<string>AppBase/ABView/NoInternetView/NoInternetView.swift</string>
-						<string>AppBase/ABView/NoInternetView/NoInternetView.xib</string>
+						<string>AppBase/Controller/BaseController.swift</string>
+						<string>AppBase/View/NoInternetView/NoInternetView.swift</string>
+						<string>AppBase/View/NoInternetView/NoInternetView.xib</string>
 						<string>AppConstants/AppConstant.swift</string>
 						<string>Vendors/PushNotificationManager.swift</string>
-						<string>Extensions/IBSession.swift</string>
-						<string>Extensions/IBString.swift</string>
-						<string>Extensions/IBView.swift</string>
-						<string>Extensions/IBViewController.swift</string>
-						<string>ServiceManager/IBError.swift</string>
+						<string>Extensions/Extention+Extra.swift</string>
+						<string>ServiceManager/Error.swift</string>
 						<string>ServiceManager/ServiceManager.swift</string>
-						<string>MVC/Controller/IBLoginController.swift</string>
-						<string>Resources/Assets.xcassets/networkerror.imageset/networkerror.png</string>
-						<string>Resources/Assets.xcassets/networkerror.imageset/Contents.json</string>
-						<string>Resources/Base.lproj/Main.storyboard</string>
+						<string>MVC/Controller/LoginController.swift</string>
+						<string>Base.lproj/Main.storyboard</string>
 					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>return true</string>
+						<key>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.</string>
+						<key>AppDelegate/AppDelegate.swift:implementation:properties:window</key>
+						<string>var window: UIWindow?</string>
+						<key>AppDelegate/AppDelegate.swift:UIApplicationMain</key>
+						<string>@UIApplicationMain</string>
+						<key>*:implementation:methods:viewDidLoad:super</key>
+						<string>super.viewDidLoad()
+// Do any additional setup after loading the view, typically from a nib.</string>
+						<key>*:implementation:methods:didReceiveMemoryWarning:super</key>
+						<string>super.didReceiveMemoryWarning()
+// Dispose of any resources that can be recreated.</string>
+						<key>*:implementation:methods:awakeFromNib:super</key>
+						<string>super.awakeFromNib()</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>hasUITests</string>
+			<key>Name</key>
+			<string>Include UI Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>101</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaTouchApplicationUITestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___UITests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>hasUnitTests</string>
+			<key>Name</key>
+			<string>Include Unit Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>coreData</string>
+			<key>Name</key>
+			<string>Use Core Data</string>
+			<key>Description</key>
+			<string>Whether the application should use the Core Data framework for storage</string>
+			<key>SortOrder</key>
+			<integer>2</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+							<dict>
+								<key>Path</key>
+								<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+								<key>SortOrder</key>
+								<integer>99</integer>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.h:imports:importFramework:CoreData</string>
+							<string>AppDelegate.h:interface:coreData</string>
+							<string>AppDelegate.m:implementation:methods:applicationWillTerminate:save</string>
+							<string>AppDelegate.m:implementation:coreData</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>*:importCoreData</key>
+							<string>#import &lt;CoreData/CoreData.h&gt;
+</string>
+							<key>AppDelegate.h:interface:coreData</key>
+							<string>@property (readonly, strong) NSPersistentContainer *persistentContainer;
+
+- (void)saveContext;
+</string>
+							<key>AppDelegate.m:implementation:methods:applicationWillTerminate:save</key>
+							<string>// Saves changes in the application&apos;s managed object context before the application terminates.
+[self saveContext];
+</string>
+							<key>AppDelegate.m:implementation:coreData</key>
+							<string>#pragma mark - Core Data stack
+
+@synthesize persistentContainer = _persistentContainer;
+
+- (NSPersistentContainer *)persistentContainer {
+    // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
+    @synchronized (self) {
+        if (_persistentContainer == nil) {
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@&quot;___PACKAGENAMEASIDENTIFIER___&quot;];
+            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+                if (error != nil) {
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    
+                    /*
+                     Typical reasons for an error here include:
+                     * The parent directory does not exist, cannot be created, or disallows writing.
+                     * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                     * The device is out of space.
+                     * The store could not be migrated to the current model version.
+                     Check the error message to determine what the actual problem was.
+                    */
+                    NSLog(@&quot;Unresolved error %@, %@&quot;, error, error.userInfo);
+                    abort();
+                }
+            }];
+        }
+    }
+    
+    return _persistentContainer;
+}
+
+#pragma mark - Core Data Saving support
+
+- (void)saveContext {
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+    NSError *error = nil;
+    if ([context hasChanges] &amp;&amp; ![context save:&amp;error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@&quot;Unresolved error %@, %@&quot;, error, error.userInfo);
+        abort();
+    }
+}
+</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate/AppDelegate.swift:imports:importFramework:CoreData</string>
+							<string>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillTerminate:save</string>
+							<string>AppDelegate/AppDelegate.swift:implementation:coreData</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>AppDelegate/AppDelegate.swift:implementation:methods:applicationWillTerminate:save</key>
+							<string>// Saves changes in the application&apos;s managed object context before the application terminates.
+self.saveContext()
+</string>
+							<key>AppDelegate/AppDelegate.swift:implementation:coreData</key>
+							<string>// MARK: - Core Data stack
+
+lazy var persistentContainer: NSPersistentContainer = {
+    /*
+     The persistent container for the application. This implementation
+     creates and returns a container, having loaded the store for the
+     application to it. This property is optional since there are legitimate
+     error conditions that could cause the creation of the store to fail.
+    */
+    let container = NSPersistentContainer(name: &quot;___PACKAGENAMEASIDENTIFIER___&quot;)
+    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+        if let error = error as NSError? {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+             
+            /*
+             Typical reasons for an error here include:
+             * The parent directory does not exist, cannot be created, or disallows writing.
+             * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+             * The device is out of space.
+             * The store could not be migrated to the current model version.
+             Check the error message to determine what the actual problem was.
+             */
+            fatalError(&quot;Unresolved error \(error), \(error.userInfo)&quot;)
+        }
+    })
+    return container
+}()
+
+// MARK: - Core Data Saving support
+
+func saveContext () {
+    let context = persistentContainer.viewContext
+    if context.hasChanges {
+        do {
+            try context.save()
+        } catch {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            let nserror = error as NSError
+            fatalError(&quot;Unresolved error \(nserror), \(nserror.userInfo)&quot;)
+        }
+    }
+}
+</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Name</key>
+			<string>Devices:</string>
+			<key>Description</key>
+			<string>Which device family to create a project for</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Universal</string>
+			<key>Values</key>
+			<array>
+				<string>Universal</string>
+				<string>iPhone</string>
+				<string>iPad</string>
+			</array>
+			<key>Units</key>
+			<dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Assets.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPhone.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>2</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Assets.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-iPad.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>Universal</key>
+				<dict>
+					<key>Project</key>
+					<dict>
+						<key>SharedSettings</key>
+						<dict>
+							<key>TARGETED_DEVICE_FAMILY</key>
+							<string>1,2</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>Assets.xcassets</key>
+						<dict>
+							<key>Path</key>
+							<string>Images-Universal.xcassets</string>
+							<key>SortOrder</key>
+							<integer>100</integer>
+						</dict>
+					</dict>
 				</dict>
 			</dict>
 		</dict>
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+		<string>AppTheme().customizeAppTheme()</string>
+		<key>AppDelegate/AppDelegate.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate/AppDelegate.swift</string>
+			<key>Group</key>
+			<array>
+				<string>AppDelegate</string>
+			</array>
+		</dict>
+		<key>Info.plist:iPhone</key>
+		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
+&lt;true/&gt;
+</string>
+		<key>Info.plist:UIRequiredDeviceCapabilities</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
+&lt;array&gt;</string>
+			<key>End</key>
+			<string>&lt;/array&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>Info.plist:UIRequiredDeviceCapabilities:base</key>
+		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
+		<key>Info.plist:statusBarTintForNavBar</key>
+		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;UINavigationBar&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Style&lt;/key&gt;
+        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
+        &lt;key&gt;Translucent&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>Info.plist:LaunchScreen</key>
+		<string>&lt;key&gt;UILaunchStoryboardName&lt;/key&gt;
+&lt;string&gt;LaunchScreen&lt;/string&gt;
+</string>
+		<key>*:implementation:methods:applicationWillResignActive:comments</key>
+		<string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+// Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+</string>
+		<key>*:implementation:methods:applicationDidEnterBackground:comments</key>
+		<string>// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+</string>
+		<key>*:implementation:methods:applicationWillEnterForeground:comments</key>
+		<string>// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</string>
+		<key>*:implementation:methods:applicationDidBecomeActive:comments</key>
+		<string>// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</string>
+		<key>*:implementation:methods:applicationWillTerminate:comments</key>
+		<string>// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.</string>
+		<key>Info.plist:UIMainStoryboardFile</key>
+		<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+&lt;string&gt;Main&lt;/string&gt;
+</string>
 		<key>Vendors/Reachability/Reachability.swift</key>
 		<dict>
 			<key>Group</key>
@@ -93,26 +537,6 @@
 				<string>AppBase</string>
 			</array>
 		</dict>
-		<key>Vendors/Reachability/Reachability.h</key>
-		<dict>
-			<key>Group</key>
-			<array>
-				<string>Vendors</string>
-				<string>Reachability</string>
-			</array>
-			<key>Path</key>
-			<string>Vendors/Reachability/Reachability.h</string>
-		</dict>
-		<key>Vendors/Reachability/Reachability.m</key>
-		<dict>
-			<key>Path</key>
-			<string>Vendors/Reachability/Reachability.m</string>
-			<key>Group</key>
-			<array>
-				<string>Vendors</string>
-				<string>Reachability</string>
-			</array>
-		</dict>
 		<key>Vendors/SwiftyJson/SwiftyJSON.swift</key>
 		<dict>
 			<key>Path</key>
@@ -123,8 +547,6 @@
 				<string>SwiftyJSON</string>
 			</array>
 		</dict>
-		<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
-		<string>AppTheme().customizeAppTheme()</string>
 		<key>Vendors/PushNotificationManager.swift</key>
 		<dict>
 			<key>Path</key>
@@ -143,37 +565,19 @@
 				<string>AppConstant</string>
 			</array>
 		</dict>
-		<key>Extensions/IBSession.swift</key>
+		<key>Extensions/Session.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Extensions/IBSession.swift</string>
+			<string>Extensions/Session.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Extensions</string>
 			</array>
 		</dict>
-		<key>Extensions/IBString.swift</key>
+		<key>Extensions/Extention+Extra.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>Extensions/IBString.swift</string>
-			<key>Group</key>
-			<array>
-				<string>Extensions</string>
-			</array>
-		</dict>
-		<key>Extensions/IBView.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>Extensions/IBView.swift</string>
-			<key>Group</key>
-			<array>
-				<string>Extensions</string>
-			</array>
-		</dict>
-		<key>Extensions/IBViewController.swift</key>
-		<dict>
-			<key>Path</key>
-			<string>Extensions/IBViewController.swift</string>
+			<string>Extensions/Extention+Extra.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Extensions</string>
@@ -188,7 +592,7 @@
 				<string>ServiceManager</string>
 			</array>
 		</dict>
-		<key>MVC/Controller/IBLoginController.swift</key>
+		<key>MVC/Controller/LoginController.swift</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -196,93 +600,70 @@
 				<string>Controller</string>
 			</array>
 			<key>Path</key>
-			<string>MVC/Controller/IBLoginController.swift</string>
+			<string>MVC/Controller/LoginController.swift</string>
 		</dict>
-		<key>AppBase/ABController/IBBaseController.swift</key>
+		<key>AppBase/Controller/BaseController.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>AppBase/ABController/IBBaseController.swift</string>
+			<string>AppBase/Controller/BaseController.swift</string>
 			<key>Group</key>
 			<array>
 				<string>AppBase</string>
-				<string>ABController</string>
+				<string>Controller</string>
 			</array>
 		</dict>
-		<key>AppBase/ABView/NoInternetView/NoInternetView.swift</key>
+		<key>AppBase/View/NoInternetView/NoInternetView.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>AppBase/ABView/NoInternetView/NoInternetView.swift</string>
+			<string>AppBase/View/NoInternetView/NoInternetView.swift</string>
 			<key>Group</key>
 			<array>
 				<string>AppBase</string>
-				<string>ABView</string>
+				<string>View</string>
 				<string>NoInternetView</string>
 			</array>
 		</dict>
-		<key>AppBase/ABView/NoInternetView/NoInternetView.xib</key>
+		<key>AppBase/View/NoInternetView/NoInternetView.xib</key>
 		<dict>
 			<key>Path</key>
-			<string>AppBase/ABView/NoInternetView/NoInternetView.xib</string>
+			<string>AppBase/View/NoInternetView/NoInternetView.xib</string>
 			<key>Group</key>
 			<array>
 				<string>AppBase</string>
-				<string>ABView</string>
+				<string>View</string>
 				<string>NoInternetView</string>
 			</array>
 		</dict>
-		<key>ServiceManager/IBError.swift</key>
+		<key>ServiceManager/Error.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>ServiceManager/IBError.swift</string>
+			<string>ServiceManager/Error.swift</string>
 			<key>Group</key>
 			<array>
 				<string>ServiceManager</string>
 			</array>
 		</dict>
-		<key>Resources/Base.lproj/Main.storyboard</key>
+		<key>Base.lproj/LaunchScreen.storyboard</key>
 		<dict>
-			<key>Path</key>
-			<string>Resources/Base.lproj/Main.storyboard</string>
 			<key>Group</key>
 			<array>
 				<string>Resources</string>
-				<string>Base.lproj</string>
 			</array>
+			<key>Path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>SortOrder</key>
+			<integer>101</integer>
+		</dict>
+		<key>Base.lproj/Main.storyboard</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Resources</string>
+			</array>
+			<key>Path</key>
+			<string>Base.lproj/Main.storyboard</string>
 			<key>SortOrder</key>
 			<integer>99</integer>
-		</dict>
-		<key>Resources/Assets.xcassets/networkerror.imageset/networkerror.png</key>
-		<dict>
-			<key>Path</key>
-			<string>Resources/Assets.xcassets/networkerror.imageset/networkerror.png</string>
-			<key>Group</key>
-			<array>
-				<string>Resources</string>
-				<string>Assets.xcassets</string>
-				<string>networkerror.imageset</string>
-			</array>
-		</dict>
-		<key>Resources/Assets.xcassets/networkerror.imageset/Contents.json</key>
-		<dict>
-			<key>Path</key>
-			<string>Resources/Assets.xcassets/networkerror.imageset/Contents.json</string>
-			<key>Group</key>
-			<array>
-				<string>Resources</string>
-				<string>Assets.xcassets</string>
-				<string>networkerror.imageset</string>
-			</array>
-		</dict>
-		<key>Resources/Assets.xcassets/appicon.imageset/Contents.json</key>
-		<dict>
-			<key>Path</key>
-			<string>Resources/Assets.xcassets/appicon.imageset/Contents.json</string>
-			<key>Group</key>
-			<array>
-				<string>Resources</string>
-				<string>Assets.xcassets</string>
-				<string>networkerror.imageset</string>
-			</array>
 		</dict>
 	</dict>
 </dict>

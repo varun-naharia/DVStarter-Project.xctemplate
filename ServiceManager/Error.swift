@@ -11,7 +11,7 @@
 
 import Foundation
 
-class IBError : NSObject{
+class Error : NSObject{
     
     var requestID  : String = ""
     var requestUrl  : String = ""

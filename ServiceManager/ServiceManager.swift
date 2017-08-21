@@ -76,7 +76,7 @@ class ServiceManager  {
             if error != nil{
                 let tempError : NSError = error! as NSError
                 
-                let error = IBError()
+                let error = Error()
                 error.errorCode = String(tempError.code)
                 error.requestID = String(rid)
                 
@@ -158,7 +158,7 @@ class ServiceManager  {
                     {
                         DispatchQueue.main.async {
                             // Show alert Data not found
-                            let error = IBError()
+                            let error = Error()
                             responseHandler(.Error, error, rid)
                         }
                     }

@@ -12,7 +12,7 @@
 import UIKit
 import GameplayKit
 
-class IBLoginController: IBBaseController {
+class LoginController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,7 @@ class IBLoginController: IBBaseController {
 }
 
 
-extension IBLoginController{
+extension LoginController{
     
     func didLoginUser() -> Void {
         let reqID = GKRandomSource.sharedRandom().nextInt()

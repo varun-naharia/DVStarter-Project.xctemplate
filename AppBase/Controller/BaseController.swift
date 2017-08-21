@@ -1,5 +1,5 @@
 //
-//  IBBaseController.swift
+//  BaseController.swift
 //  Testing
 //
 //  Created by Dinesh on 05/08/17.
@@ -11,7 +11,7 @@
 
 import UIKit
 
-class IBBaseController: UIViewController {
+class BaseController: UIViewController {
     
     var reachability = Reachability()!
     let noInternetview = NoInternetView.loadFromXIB()
