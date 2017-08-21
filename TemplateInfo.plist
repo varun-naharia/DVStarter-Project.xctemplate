@@ -99,6 +99,7 @@
 						<string>AppConstants/AppConstant.swift</string>
 						<string>Vendors/PushNotificationManager.swift</string>
 						<string>Extensions/Extention+Extra.swift</string>
+						<string>Extensions/Session.swift</string>
 						<string>ServiceManager/Error.swift</string>
 						<string>ServiceManager/ServiceManager.swift</string>
 						<string>MVC/Controller/LoginController.swift</string>
@@ -455,7 +456,7 @@ func saveContext () {
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+		<key>AppDelegate/AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
 		<string>AppTheme().customizeAppTheme()</string>
 		<key>AppDelegate/AppDelegate.swift</key>
 		<dict>
